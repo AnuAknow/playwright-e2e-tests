@@ -2,29 +2,14 @@
 
 ## 1.1. In this session... 
 
-**Forking an Existing Playwright Repository for Faster Setup**
-__Commands Used__
+### Pseudocode
+1. ✅ Create a `.csv` file with test data
+2. Read the file with native `fs` module
+3. Parse the csv data -> Array of data (install csv-parse)
+4. Console out the data
+5. Done ! 🎉
 
-```sh
-# Clone
-git clone https://github.com/<your-username>/<forked-repo>.git
-
-# Track upstream
-git remote add upstream https://github.com/raptatinha/tau-introduction-to-playwright.git
-
-# Check remote
-git remote -v
-
-# Pull latest from upstream
-git pull upstream main
-
-# You can push your changes - this does not impact the upstream repo
-git push origin main
-
-```
 
 **Reference**
-1. Sample repo: https://github.com/raptatinha/tau-introduction-to-playwright/tree/main 
-2. Git docs: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo 
-
-Done! 🎉
+1. Nodejs Doco: https://nodejs.org/docs/latest/api/fs.html#synchronous-api 
+---
