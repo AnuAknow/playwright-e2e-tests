@@ -9,7 +9,7 @@ test.describe("Make Appointment", { annotation: { type: "Story", description: "J
         await expect(page.locator("//h1")).toHaveText("CURA Healthcare Service");
 
         // 2. Click on the Make Appointment
-        await page.getByRole("link", { name: "Make Appointment" }).click();
+        await page.locator('#btn-make-appointment').click();
         await expect(page.getByText("Please login to make")).toBeVisible();
 
         // Successful login

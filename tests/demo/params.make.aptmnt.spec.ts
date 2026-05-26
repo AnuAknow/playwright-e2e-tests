@@ -17,7 +17,7 @@ for (const apptData of makeApptTestData) {
             await expect(page.locator("//h1")).toHaveText("CURA Healthcare Service");
 
             // 2. Click on the Make Appointment
-            await page.getByRole("link", { name: "Make Appointment" }).click();
+            await page.locator('#btn-make-appointment').click();
             await expect(page.getByText("Please login to make")).toBeVisible();
 
             // Successful login

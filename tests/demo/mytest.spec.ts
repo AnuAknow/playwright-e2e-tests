@@ -15,7 +15,7 @@ test("Should load homepage with correct title", async ({ page }) => {
 
 test("Should do something", { tag: "@smoke" }, async ({ page }, testInfo) => {
     // steps..
-    await page.locator("//h1").click();
+    await page.locator('#btn-make-appointment').click();
 });
 
 test("Should demo locators", async ({ page }) => {
@@ -63,7 +63,7 @@ test("Should demo constants data", async ({ page }, testInfo) => {
 test.only("Should demo a click action", async ({ page }, testInfo) => {
     // Default action
    //  await page.goto("https://katalon-demo-cura.herokuapp.com/");
-    let ele = page.getByRole("link", { name: "Make-Appointment" });
+    let ele = page.locator('#btn-make-appointment');
     // await ele.click();
 
     // Base page action

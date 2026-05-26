@@ -25,7 +25,7 @@ test.describe("Make Appointment", () => {
         // await page.getByRole("link", { name: "Make Appointment" }).dblclick();
         // await page.getByRole("link", { name: "Make Appointment" }).click({ button: "right" });
         // await page.getByRole("link", { name: "Make Appointment" }).hover()
-        await page.getByRole("link", { name: "Make Appointment" }).click({ timeout: 10_000 });
+        await page.locator('#btn-make-appointment').click({ timeout: 10_000 });
 
         await expect(page.getByText("Please login to make")).toBeVisible();
 
