@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("Successfully Book an Appointment", async ({ page }) => {
+test("Make Appointment flow", async ({ page }) => {
 
     //Navigate to the homepage
     await page.goto("https://katalon-demo-cura.herokuapp.com/");
@@ -30,7 +30,7 @@ test("Successfully Book an Appointment", async ({ page }) => {
     //Confirm appointment
     await expect(page.locator('h2')).toContainText('Appointment Confirmation');
     await expect(page.locator('#summary')).toContainText('Please be informed that your appointment has been booked as following:');
-    await expect(page.locator('#facility')).toContainText('Tokyo CURA Healthcare Center');
+    await expect(page.locator('#facility')).toContainText('Seoul CURA Healthcare Center');
     await expect(page.locator('#hospital_readmission')).toContainText('Yes');
     await expect(page.locator('#program')).toContainText('Medicare');
     await expect(page.locator('#visit_date')).toContainText('28/05/2026');
