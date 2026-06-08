@@ -25,8 +25,8 @@
     "login": "npx playwright test tests/functional/login.spec.ts --headed",
     "demo": "npx playwright test tests/demo/mytest.spec.ts --headed",
     "demo:msedge": "npx playwright test tests/demo/mytest2.spec.ts --headed",
-    "demo:mkappmnt" : "npx playwright test tests/demo/mkappmnt.assmnt.spec.ts --headed",
-    "cmplt_chkout" : "npx playwright test tests/demo/chkout.flw.spec.ts --headed"
+    "demo:mkappmnt": "npx playwright test tests/demo/mkappmnt.assmnt.spec.ts --headed",
+    "cmplt_chkout": "npx playwright test tests/demo/chkout.flw.spec.ts --headed"
   },
   "keywords": [
     "playwright",
@@ -43,5 +43,8 @@
     "chalk": "^5.6.2",
     "csv-parse": "^6.1.0",
     "dotenv": "^17.2.3"
+  },
+  "dependencies": {
+    "react": "^19.2.7"
   }
 }
