@@ -1,5 +1,6 @@
 import { defineConfig, devices } from "@playwright/test";
 
+
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -30,10 +31,7 @@ export const baseConfig = defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     [
-      "html",
-      {
-        open: "never",
-      },
+      "html",               
     ],
     [
       "allure-playwright",
@@ -63,6 +61,7 @@ export const baseConfig = defineConfig({
     // actionTimeout: 10_000,
     userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
   },
+  
 
   /* Configure projects for major browsers */
   projects: [
